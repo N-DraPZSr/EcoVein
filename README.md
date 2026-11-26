@@ -1,6 +1,6 @@
 # 🌿 EcoVein
 
-Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan edukasi isu lingkungan hidup, sekaligus mewadahi partisipasi aktif masyarakat melalui fitur donasi dan pendaftaran relawan, dengan dashboard transparansi yang terbuka untuk publik. Platform ini diperkuat dengan sistem autentikasi pengguna, database terpusat, panel admin untuk pengelolaan konten, serta dashboard transparansi interaktif, semuanya demi menjaga kepercayaan dan akuntabilitas publik.
+Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan edukasi isu lingkungan hidup, sekaligus mewadahi partisipasi aktif masyarakat melalui fitur donasi dan pendaftaran relawan, dengan dashboard transparansi yang terbuka untuk publik. Platform ini dilengkapi dengan antarmuka edukasi, formulir partisipasi, tampilan panel pengelolaan konten, serta dashboard transparansi interaktif untuk mendukung keterbukaan informasi publik.
 
 > Teknik Multimedia Digital, Politeknik Negeri Jakarta, 2026.
 
@@ -22,9 +22,9 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 ## 🎯 Tujuan Platform
 
 1. **Menyediakan Pusat Informasi Lingkungan**: Menyajikan informasi dan edukasi terstruktur mengenai berbagai isu lingkungan hidup bagi masyarakat luas.
-2. **Mewadahi Partisipasi Aktif Masyarakat**: Memfasilitasi donasi dan pendaftaran relawan melalui akun pengguna yang terverifikasi.
-3. **Menjunjung Tinggi Akuntabilitas dan Transparansi**: Menyajikan dashboard transparansi berbasis data real-time agar donatur dan relawan dapat memantau dampak serta penggunaan dana secara terbuka.
-4. **Menghadirkan Pengelolaan Sistem yang Terintegrasi**: Membangun panel admin untuk mengelola data pengguna, konten edukasi, laporan donasi, dan kegiatan relawan secara terpusat.
+2. **Mewadahi Partisipasi Aktif Masyarakat**: Memfasilitasi antarmuka donasi dan pendaftaran relawan yang mudah diakses oleh pengunjung.
+3. **Menjunjung Tinggi Akuntabilitas dan Transparansi**: Menyajikan tampilan dashboard transparansi interaktif agar pengunjung dapat memantau dampak serta laporan penggunaan dana secara terbuka.
+4. **Menghadirkan Antarmuka Pengelolaan yang Terstruktur**: Merancang tampilan panel admin untuk kebutuhan pengelolaan konten edukasi, data donatur, laporan, dan kegiatan relawan secara terpusat.
 
 ---
 
@@ -37,8 +37,8 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 | Transparansi | `transparansi.html` | Publik | Dashboard transparansi: laporan dana dan dokumentasi kegiatan |
 | Register | `register.html` | Publik | Formulir pembuatan akun pengguna baru |
 | Login | `login.html` | Publik | Formulir masuk untuk pengguna terdaftar |
-| Donasi | `donasi.html` | Login | Formulir donasi finansial; data tersimpan di database |
-| Relawan | `relawan.html` | Login | Formulir pendaftaran volunteer; data tersimpan di database |
+| Donasi | `donasi.html` | Login | Formulir donasi finansial |
+| Relawan | `relawan.html` | Login | Formulir pendaftaran volunteer |
 | Panel Admin | `admin/index.html` | Admin | Dashboard admin: kelola donatur, relawan, laporan, dan konten |
 
 ---
@@ -66,12 +66,8 @@ EcoVein/
 │   ├── components.css
 │   └── layout.css
 ├── js/
-│   ├── auth.js
 │   ├── main.js
 │   └── dashboard.js
-├── backend/
-│   ├── db.js
-│   └── routes/
 ├── assets/
 │   ├── images/
 │   └── icons/
@@ -88,9 +84,6 @@ EcoVein/
 | Lapisan | Teknologi |
 |---|---|
 | Frontend | HTML5, CSS3, JavaScript (tanpa framework CSS) |
-| Backend | Node.js / PHP |
-| Database | MySQL / PostgreSQL |
-| Autentikasi | JWT / Session Cookie + bcrypt |
 
 ---
 
@@ -99,19 +92,8 @@ EcoVein/
 | Peran | Hak Akses |
 |---|---|
 | Tamu (Guest) | Beranda, Edukasi, Transparansi |
-| Pengguna (User) | Semua akses tamu + Donasi dan Relawan (setelah login) |
+| Pengguna (User) | Semua akses tamu + Donasi dan Relawan |
 | Admin | Semua akses pengguna + Panel Admin |
-
----
-
-## 🗄️ Skema Database
-
-| Tabel | Kolom Utama | Keterangan |
-|---|---|---|
-| users | id, nama, email, password_hash, role, created_at | Semua akun pengguna dan admin |
-| donatur | id, user_id, nominal, program, status, created_at | Data donasi terhubung ke akun pengguna |
-| relawan | id, user_id, kontak, lokasi, jenis_kegiatan, status, created_at | Data relawan terhubung ke akun pengguna |
-| laporan | id, judul, jenis, konten, tanggal, admin_id, created_at | Entri laporan transparansi dari admin |
 
 ---
 
@@ -119,15 +101,10 @@ EcoVein/
 
 1. Clone repositori ini
    ```bash
-   git clone https://github.com/N-DraPZSr/EcoVein.git
+   git clone [https://github.com/N-DraPZSr/EcoVein.git](https://github.com/N-DraPZSr/EcoVein.git)
    cd EcoVein
    ```
-2. Sesuaikan konfigurasi database di file `.env` atau `config.php`
-3. Jalankan server lokal, contoh dengan Node.js:
-   ```bash
-   node backend/server.js
-   ```
-4. Buka `http://localhost:3000` di browser (Chrome atau Firefox)
+2. Buka file `index.html` langsung di browser (Chrome atau Firefox), atau jalankan menggunakan ekstensi **Live Server** pada Visual Studio Code.
 
 ---
 
@@ -143,5 +120,4 @@ EcoVein/
 ---
 
 **Hasil Survei Kebutuhan Data Untuk Web**
-
 [https://docs.google.com/forms/d/1B6WvQln0b2qAN3GwVTJuonNm2h4s0nWe-sdsTmsHGfw/edit#responses](https://docs.google.com/forms/d/1B6WvQln0b2qAN3GwVTJuonNm2h4s0nWe-sdsTmsHGfw/edit#responses)
