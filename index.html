@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - EcoVein</title>
+    <title>EcoVein</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
     <header>
         <nav aria-label="Navigasi utama">
             <a href="index.html">EcoVein</a>
-            <ul>
+
+            <button type="button" 
+                class="nav-toggle"
+                aria-label="Buka menu navigasi" 
+                aria-expanded="false"
+                aria-controls="menu-utama">
+                Menu 
+            </button>
+            
+            <ul id="menu-utama" class="nav-menu">
                 <li><a href="index.html" aria-current="page">Beranda</a></li>
                 <li><a href="edukasi.html">Edukasi</a></li>
                 <li><a href="donasi.html">Donasi</a></li>
@@ -18,6 +30,7 @@
             </ul>
         </nav>
     </header>
+
 
     <main>
         <section id="hero">
