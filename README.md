@@ -10,7 +10,7 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 
 | Nama | NIM | Peran |
 |---|---|---|
-| Ahmad Husein | 2507431079 | Analis & pengelola konten, Pengembang CSS |
+| Ahmad Husein | 2507431079 | pengembang dan perancang bagian admin & 5 management views |
 | Frytsar Oriscky Nurrachman | 2507431041 | Analis & pengelola konten, Penguji & dokumentator |
 | Narindra Panji Dwitama | 2507431045 | Analis & pengelola konten, Perancang HTML, Perancang & Pengembang CSS |
 | Rama Jundi Andela | 2507431046 | Perancang & pengembang HTML, Penguji & dokumentator |
