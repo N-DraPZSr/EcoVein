@@ -15,7 +15,7 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 | Narindra Panji Dwitama | 2507431045 | Analis & pengelola konten, Perancang HTML, Perancang & Pengembang CSS |
 | Rama Jundi Andela | 2507431046 | Perancang & pengembang HTML, Penguji & dokumentator |
 | Sigit Ariyanto | 2507431015 | Perancang & pengembang HTML, Pengembang CSS |
-| Izzan Zhillan Irham | 2507431049 | Pengembang CSS, Penguji & dokumentator |
+| Izzan Zhillan Irham | 2507431049 | Perancang HTML, Perancang JS, Penguji |
 
 ---
 
