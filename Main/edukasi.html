@@ -4,85 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edukasi - EcoVein</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Navigasi utama">
-            <a href="index.html">EcoVein</a>
-            <button type="button" aria-label="Buka menu navigasi" aria-expanded="false">Menu</button>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="edukasi.html" aria-current="page">Edukasi</a></li>
-                <li><a href="donasi.html">Donasi</a></li>
-                <li><a href="relawan.html">Relawan</a></li>
-                <li><a href="transparansi.html">Transparansi</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="intro-edukasi">
-            <h1>Edukasi Lingkungan</h1>
-            <p>
-                Temukan informasi sederhana dan mudah dipahami untuk mengetahui
-                isu lingkungan serta langkah yang dapat dilakukan sehari-hari.
-            </p>
-        </section>
-
-        <section id="zero-waste">
-            <h2>Zero Waste Lifestyle</h2>
-            <article>
-                <h3>Hidup Lebih Ramah Lingkungan</h3>
-                <p>
-                    Tips mengurangi sampah melalui penggunaan ulang, pengurangan
-                    produk sekali pakai, dan pengelolaan sampah secara bijak.
-                </p>
-            </article>
-        </section>
-
-        <section id="waste-mgmt">
-            <h2>Waste Management</h2>
-            <article>
-                <h3>Pengelolaan dan Daur Ulang Sampah</h3>
-                <p>
-                    Informasi mengenai pemilahan sampah organik dan anorganik,
-                    serta proses daur ulang yang dapat dilakukan masyarakat.
-                </p>
-            </article>
-        </section>
-
-        <section id="konservasi">
-            <h2>Konservasi Alam</h2>
-            <article>
-                <h3>Pelestarian Flora dan Fauna</h3>
-                <p>
-                    Pembahasan mengenai pentingnya menjaga ekosistem, satwa,
-                    tumbuhan, dan habitat alami.
-                </p>
-            </article>
-        </section>
-
-        <section id="perubahan-iklim">
-            <h2>Perubahan Iklim</h2>
-            <article>
-                <h3>Pemanasan Global dan Emisi Karbon</h3>
-                <p>
-                    Informasi mengenai penyebab perubahan iklim dan tindakan
-                    sederhana untuk mengurangi emisi karbon.
-                </p>
-            </article>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <p>EcoVein - Platform informasi dan aksi lingkungan.</p>
-        <nav aria-label="Tautan sosial">
-            <a href="#">Media Sosial</a>
-        </nav>
-    </footer>
+<header>
+    <nav class="navbar navbar-expand-md bg-white border-bottom sticky-top" aria-label="Navigasi utama">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="index.html">EcoVein</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu navigasi"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto align-items-md-center gap-md-2"><li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li><li class="nav-item"><a class="nav-link" href="edukasi.html" aria-current="page">Edukasi</a></li><li class="nav-item"><a class="nav-link" href="donasi.html">Donasi</a></li><li class="nav-item"><a class="nav-link" href="relawan.html">Relawan</a></li><li class="nav-item"><a class="nav-link" href="transparansi.html">Transparansi</a></li></ul></div>
+        </div>
+    </nav>
+</header>
+<main>
+<section id="intro-edukasi" class="bg-light py-5"><div class="container"><h1 class="fw-bold text-success">Edukasi Lingkungan</h1><p class="lead mb-0">Temukan informasi sederhana dan mudah dipahami untuk mengetahui isu lingkungan serta langkah yang dapat dilakukan sehari-hari.</p></div></section>
+<section id="zero-waste" class="container py-4 "><h2 class="h3 text-success mb-3">Zero Waste Lifestyle</h2><article class="card shadow-sm"><div class="row g-0"><div class="col-md-4"><img src="Assets/Image/edukasi-zero-waste.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Ilustrasi Zero Waste Lifestyle"></div><div class="col-md-8"><div class="card-body"><h3 class="h5 text-success">Hidup Lebih Ramah Lingkungan</h3><p class="mb-0">Tips mengurangi sampah melalui penggunaan ulang, pengurangan produk sekali pakai, dan pengelolaan sampah secara bijak.</p></div></div></div></article></section>
+<section id="waste-mgmt" class="container py-4 "><h2 class="h3 text-success mb-3">Waste Management</h2><article class="card shadow-sm"><div class="row g-0"><div class="col-md-4"><img src="Assets/Image/edukasi-waste-mgmt.png" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Ilustrasi Waste Management"></div><div class="col-md-8"><div class="card-body"><h3 class="h5 text-success">Pengelolaan dan Daur Ulang Sampah</h3><p class="mb-0">Informasi mengenai pemilahan sampah organik dan anorganik, serta proses daur ulang yang dapat dilakukan masyarakat.</p></div></div></div></article></section>
+<section id="konservasi" class="container py-4 "><h2 class="h3 text-success mb-3">Konservasi Alam</h2><article class="card shadow-sm"><div class="row g-0"><div class="col-md-4"><img src="Assets/Image/konservasialam.jpeg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Ilustrasi Konservasi Alam"></div><div class="col-md-8"><div class="card-body"><h3 class="h5 text-success">Pelestarian Flora dan Fauna</h3><p class="mb-0">Pembahasan mengenai pentingnya menjaga ekosistem, satwa, tumbuhan, dan habitat alami.</p></div></div></div></article></section>
+<section id="perubahan-iklim" class="container py-4 "><h2 class="h3 text-success mb-3">Perubahan Iklim</h2><article class="card shadow-sm"><div class="row g-0"><div class="col-md-4"><img src="Assets/Image/perubahaniklim.jpeg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Ilustrasi Perubahan Iklim"></div><div class="col-md-8"><div class="card-body"><h3 class="h5 text-success">Pemanasan Global dan Emisi Karbon</h3><p class="mb-0">Informasi mengenai penyebab perubahan iklim dan tindakan sederhana untuk mengurangi emisi karbon.</p></div></div></div></article></section>
+</main>
+<footer class="bg-success text-white py-4 mt-5 text-center">
+    <div class="container">
+        <a class="text-white fw-bold text-decoration-none" href="index.html">EcoVein</a>
+        <p class="mb-1"><small>&copy; 2026 EcoVein. Semua hak dilindungi.</small></p>
+        <nav aria-label="Media sosial" class="d-flex gap-3 justify-content-center"><a class="text-white" href="#">Facebook</a><a class="text-white" href="#">Instagram</a><a class="text-white" href="#">YouTube</a></nav>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/main.js"></script>
 </body>
