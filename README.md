@@ -1,4 +1,4 @@
-# 🌿 EcoVein
+# EcoVein
 
 Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan edukasi isu lingkungan hidup, sekaligus mewadahi partisipasi aktif masyarakat melalui fitur donasi dan pendaftaran relawan, dengan dashboard transparansi yang terbuka untuk publik. Platform ini dilengkapi dengan antarmuka edukasi, formulir partisipasi, tampilan panel pengelolaan konten, serta dashboard transparansi interaktif untuk mendukung keterbukaan informasi publik.
 
@@ -6,7 +6,7 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 
 ---
 
-## 👥 Anggota Kelompok 4
+## Anggota Kelompok 4
 
 | Nama | NIM | Peran |
 |---|---|---|
@@ -15,11 +15,11 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 | Narindra Panji Dwitama | 2507431045 | Analis & pengelola konten, Perancang HTML, Perancang & Pengembang CSS |
 | Rama Jundi Andela | 2507431046 | Perancang & pengembang HTML, Penguji & dokumentator |
 | Sigit Ariyanto | 2507431015 | Perancang & pengembang HTML, Pengembang CSS |
-| Izzan Zhillan Irham | 2507431049 | Pengembang CSS, Penguji & dokumentator |
+| Izzan Zhillan Irham | 2507431049 | Perancang HTML, Perancang JS, Penguji |
 
 ---
 
-## 🎯 Tujuan Platform
+## Tujuan Platform
 
 1. **Menyediakan Pusat Informasi Lingkungan**: Menyajikan informasi dan edukasi terstruktur mengenai berbagai isu lingkungan hidup bagi masyarakat luas.
 2. **Mewadahi Partisipasi Aktif Masyarakat**: Memfasilitasi antarmuka donasi dan pendaftaran relawan yang mudah diakses oleh pengunjung.
@@ -28,7 +28,7 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 
 ---
 
-## 📄 Halaman
+## Halaman
 
 | Halaman | File | Akses | Deskripsi |
 |---|---|---|---|
@@ -43,7 +43,7 @@ Platform website peduli lingkungan yang berfungsi sebagai pusat informasi dan ed
 
 ---
 
-## 🗂️ Struktur Direktori
+## Struktur Direktori
 
 ```
 EcoVein/
@@ -79,7 +79,7 @@ EcoVein/
 
 ---
 
-## 🛠️ Teknologi
+## Teknologi
 
 | Lapisan | Teknologi |
 |---|---|
@@ -87,7 +87,7 @@ EcoVein/
 
 ---
 
-## 👤 Peran Pengguna
+## Peran Pengguna
 
 | Peran | Hak Akses |
 |---|---|
@@ -97,7 +97,7 @@ EcoVein/
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 1. Clone repositori ini
    ```bash
@@ -108,7 +108,7 @@ EcoVein/
 
 ---
 
-## 📐 Viewport Uji
+## Viewport Uji
 
 | Perangkat | Lebar |
 |---|---|
