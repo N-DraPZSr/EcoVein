@@ -6,16 +6,16 @@ Permasalahan lingkungan hidup dan isu krisis iklim saat ini telah menjadi perhat
 
 Di sisi lain, kepedulian masyarakat untuk berkontribusi secara nyata, baik melalui dukungan finansial maupun keterlibatan fisik, seringkali terhambat oleh minimnya wadah yang akuntabel dan kekhawatiran akan keterbukaan pengelolaan dana.
 
-Guna menjawab tantangan tersebut, dikembangkanlah platform EcoVein sebagai general website yang berfungsi sebagai pusat informasi lingkungan hidup. Platform ini tidak hanya menyajikan edukasi, tetapi juga menyediakan sarana kontribusi melalui fitur pendonasian dan pendaftaran relawan (volunteer), diperkuat dengan sistem autentikasi pengguna, database terpusat, panel admin, serta dashboard transparansi interaktif.
+Guna menjawab tantangan tersebut, dikembangkanlah platform EcoVein sebagai general website yang berfungsi sebagai pusat informasi lingkungan hidup. Platform ini tidak hanya menyajikan edukasi, tetapi juga menyediakan sarana kontribusi melalui antarmuka pendonasian dan pendaftaran relawan (volunteer), dilengkapi dengan halaman autentikasi pengguna, tampilan panel admin pengelolaan konten, serta dashboard transparansi interaktif.
 
 ---
 
 ## 2. Tujuan
 
 1. **Menyediakan Pusat Informasi Lingkungan**: Mengembangkan general website yang menyajikan sumber informasi dan edukasi yang terstruktur mengenai berbagai isu lingkungan hidup bagi masyarakat luas.
-2. **Mewadahi Partisipasi Aktif Masyarakat**: Memfasilitasi masyarakat yang ingin berkontribusi melalui fitur pendonasian yang aman serta pendaftaran relawan (volunteering), keduanya memerlukan akun pengguna yang terverifikasi.
-3. **Menjunjung Tinggi Akuntabilitas dan Transparansi**: Menyajikan dashboard transparansi berbasis data real-time agar donatur dan relawan dapat memantau dampak serta penggunaan dana secara terbuka.
-4. **Menghadirkan Pengelolaan Sistem yang Terintegrasi**: Membangun panel admin untuk mengelola data pengguna, konten edukasi, laporan donasi, dan kegiatan relawan secara terpusat.
+2. **Mewadahi Partisipasi Aktif Masyarakat**: Memfasilitasi masyarakat yang ingin berkontribusi melalui antarmuka pendonasian serta formulir pendaftaran relawan (volunteering) yang mudah diakses.
+3. **Menjunjung Tinggi Akuntabilitas dan Transparansi**: Menyajikan tampilan dashboard transparansi interaktif agar pengunjung dan donatur dapat memantau dampak serta laporan penggunaan dana secara terbuka.
+4. **Menghadirkan Antarmuka Pengelolaan yang Terstruktur**: Merancang tampilan panel admin untuk kebutuhan pengelolaan konten edukasi, data donatur, laporan donasi, dan kegiatan relawan secara terpusat.
 
 ---
 
@@ -26,11 +26,11 @@ Guna menjawab tantangan tersebut, dikembangkanlah platform EcoVein sebagai gener
 | Platform | EcoVein |
 | Pengguna sasaran | Masyarakat umum dari berbagai kalangan dan usia |
 | Situasi penggunaan | Membuka website dari ponsel atau komputer untuk mencari informasi lingkungan, berdonasi, atau mendaftar sebagai relawan |
-| Kebutuhan pengguna | Informasi lingkungan yang mudah dipahami, donasi yang aman melalui akun terverifikasi, pendaftaran relawan, serta pemantauan transparansi dana |
-| Tujuan platform | Menjadi pusat informasi lingkungan yang terpercaya dan mendorong partisipasi aktif masyarakat dengan sistem yang terkelola dan akuntabel |
-| Tindakan utama | Membaca konten edukasi, membuat akun/login, mengisi formulir donasi, mendaftar sebagai relawan, memantau dashboard transparansi |
-| Ruang lingkup | Halaman beranda, edukasi, donasi, relawan, transparansi, login/register, dashboard admin, database, payment gateway otomatis (QRIS terintegrasi) |
-| Di luar ruang lingkup | fitur chat langsung, notifikasi push, aplikasi mobile native |
+| Kebutuhan pengguna | Informasi lingkungan yang mudah dipahami, antarmuka donasi dan pendaftaran relawan yang mudah digunakan, serta pemantauan transparansi dana |
+| Tujuan platform | Menjadi pusat informasi lingkungan yang terpercaya dan mendorong partisipasi aktif masyarakat dengan antarmuka yang terstruktur dan informatif |
+| Tindakan utama | Membaca konten edukasi, mengakses halaman akun/login, mengisi formulir donasi, mendaftar sebagai relawan, memantau dashboard transparansi |
+| Ruang lingkup | Halaman beranda, edukasi, donasi, relawan, transparansi, login/register, dashboard admin |
+| Di luar ruang lingkup | integrasi backend dan database, payment gateway otomatis, fitur chat langsung, notifikasi push, aplikasi mobile native |
 
 ---
 
@@ -137,16 +137,16 @@ Berdasarkan data KLHK dan berbagai sumber terkait:
 | ID | Kebutuhan | Kriteria Penerimaan |
 |---|---|---|
 | F-01 | Pengguna dapat membaca konten informasi dan edukasi lingkungan | Halaman edukasi menampilkan minimal empat topik: zero waste, waste management, konservasi alam, dan perubahan iklim |
-| F-02 | Pengguna dapat mendaftar akun (register) | Formulir registrasi memuat nama, email, kata sandi, dan konfirmasi kata sandi; data tersimpan di database |
-| F-03 | Pengguna dapat masuk ke akun (login) | Formulir login memverifikasi email dan kata sandi; sesi pengguna aktif setelah berhasil masuk |
-| F-04 | Pengguna yang sudah login dapat mengisi formulir donasi | Formulir donasi hanya dapat diakses setelah login; data donatur tersimpan di database |
-| F-05 | Pengguna yang sudah login dapat mendaftar sebagai relawan | Formulir relawan hanya dapat diakses setelah login; data relawan tersimpan di database |
-| F-06 | Pengguna dapat melihat dashboard transparansi | Dashboard menampilkan total donasi terkumpul, daftar kegiatan, dan ringkasan penggunaan dana secara real-time |
-| F-07 | Admin dapat masuk ke panel admin | Halaman login admin terpisah; hanya akun berperan admin yang dapat mengaksesnya |
-| F-08 | Admin dapat mengelola data donatur | Admin dapat melihat, memfilter, dan mengekspor daftar donatur dari panel admin |
-| F-09 | Admin dapat mengelola data relawan | Admin dapat melihat, memfilter, mengonfirmasi, dan menolak pendaftaran relawan |
-| F-10 | Admin dapat memperbarui konten laporan transparansi | Admin dapat menambah, mengedit, dan menghapus entri laporan keuangan dan kegiatan |
-| F-11 | Navigasi antar halaman berfungsi dengan benar | Semua tautan menuju halaman yang sesuai tanpa error; halaman terlindungi redirect ke login jika belum masuk |
+| F-02 | Pengguna dapat mengakses formulir pendaftaran akun (register) | Formulir registrasi memuat input nama, email, kata sandi, dan konfirmasi kata sandi dengan validasi sisi klien |
+| F-03 | Pengguna dapat mengakses formulir masuk akun (login) | Formulir login memuat input email dan kata sandi dengan validasi format serta umpan balik antarmuka |
+| F-04 | Pengguna dapat mengisi formulir donasi | Formulir donasi memuat pilihan nominal, program, dan data donatur dengan validasi input pada antarmuka |
+| F-05 | Pengguna dapat mengisi formulir pendaftaran relawan | Formulir relawan memuat input data diri, kontak, lokasi, dan jenis kegiatan dengan validasi input pada antarmuka |
+| F-06 | Pengguna dapat melihat dashboard transparansi | Dashboard menampilkan ringkasan total donasi terkumpul, daftar kegiatan, dan visualisasi penggunaan dana secara interaktif |
+| F-07 | Admin dapat mengakses halaman login dan panel admin | Tersedia halaman login admin terpisah yang mengarahkan ke tampilan dashboard panel admin |
+| F-08 | Admin dapat melihat dan memfilter tampilan data donatur | Panel admin menyediakan tabel daftar donatur lengkap dengan fitur pencarian dan filter antarmuka |
+| F-09 | Admin dapat mengelola tampilan data relawan | Panel admin menyediakan tampilan daftar relawan dengan fitur filter serta kontrol status tampilan |
+| F-10 | Admin dapat mengelola tampilan laporan transparansi dan konten | Panel admin menyediakan antarmuka formulir dan daftar untuk menambah, mengedit, serta menghapus entri laporan dan konten |
+| F-11 | Navigasi antar halaman berfungsi dengan benar | Semua tautan antar halaman publik maupun panel admin mengarah ke file yang sesuai tanpa error |
 
 ---
 
@@ -155,11 +155,10 @@ Berdasarkan data KLHK dan berbagai sumber terkait:
 | ID | Kebutuhan | Kriteria Penerimaan |
 |---|---|---|
 | NF-01 | Tampilan responsif di berbagai ukuran layar | Tidak ada scroll horizontal pada viewport ponsel (360 px) hingga desktop (1366 px) |
-| NF-02 | Navigasi dapat digunakan melalui keyboard | Semua tautan dapat difokuskan dan diaktifkan tanpa mouse |
-| NF-03 | Keamanan autentikasi | Kata sandi disimpan dalam bentuk hash (bcrypt); sesi menggunakan token aman (JWT atau session cookie) |
-| NF-04 | Keamanan data pengguna | Input divalidasi dan disanitasi untuk mencegah SQL injection dan XSS |
-| NF-05 | Markup HTML valid | Tidak ada error saat diperiksa menggunakan validator.w3.org |
-| NF-06 | Proyek mudah dipelihara | CSS terpisah dari HTML, kode backend terstruktur, dan README tersedia |
+| NF-02 | Navigasi dapat digunakan melalui keyboard | Semua tautan dan elemen interaktif dapat difokuskan dan diaktifkan tanpa mouse |
+| NF-03 | Validasi input pada sisi klien | Seluruh input formulir memiliki validasi format dasar menggunakan HTML5 dan JavaScript |
+| NF-04 | Markup HTML valid | Tidak ada error saat diperiksa menggunakan validator.w3.org |
+| NF-05 | Proyek mudah dipelihara | CSS dan JavaScript terpisah secara modular dari HTML, serta dokumentasi README tersedia |
 
 ---
 
@@ -168,8 +167,6 @@ Berdasarkan data KLHK dan berbagai sumber terkait:
 - Viewport uji (dalam CSS pixel): ponsel kecil 360 px, ponsel 390 px, tablet 768 px, desktop 1366 px
 - Peramban uji: Google Chrome dan Mozilla Firefox
 - Frontend: HTML5, CSS3, JavaScript (tanpa framework CSS tambahan)
-- Backend: Node.js / PHP dengan database relasional (MySQL / PostgreSQL)
-- Autentikasi: JWT / session cookie dengan enkripsi kata sandi menggunakan bcrypt
 
 ---
 
@@ -179,16 +176,16 @@ Berdasarkan data KLHK dan berbagai sumber terkait:
 
 - Halaman beranda (hero, ringkasan misi, navigasi utama)
 - Halaman informasi dan edukasi lingkungan (4 topik)
-- Halaman donasi: hanya untuk pengguna yang sudah login
-- Halaman pendaftaran relawan: hanya untuk pengguna yang sudah login
-- Halaman dashboard transparansi: dapat diakses publik
+- Halaman donasi (antarmuka formulir donasi)
+- Halaman pendaftaran relawan (antarmuka formulir relawan)
+- Halaman dashboard transparansi (visualisasi laporan dana dan dokumentasi kegiatan)
 - Halaman register dan login pengguna
 - Panel admin: login admin, kelola donatur, kelola relawan, kelola laporan, kelola konten
-- Database untuk menyimpan data pengguna, donatur, relawan, dan laporan
-- Payment gateway otomatis (QRIS terintegrasi)
 
 ### Yang Tidak Dikerjakan
 
+- Pengembangan backend, API, dan integrasi database
+- Autentikasi berbasis server dan payment gateway otomatis (QRIS)
 - Notifikasi email atau push notification otomatis
 - Fitur chat langsung antara pengguna dan admin
 - Aplikasi mobile native (Android/iOS)
